@@ -21,6 +21,26 @@
   font-size: 1.1rem;
 }
 
+.notification-banner {
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+.notification-banner.warning {
+  background: #f9e5d6;
+  color: #7a3f03;
+}
+
+.notification-banner.success {
+  background: #d6f5e9;
+  color: #1f5f3a;
+}
+
 .my-hackathons-page .hackathons-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

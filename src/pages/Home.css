@@ -90,6 +90,69 @@
   line-height: 1.6;
 }
 
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 140px);
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.admin-title {
+  color: #1a1a2e;
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.admin-subtitle {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.admin-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.admin-card-title {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.admin-card-desc {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin: 0;
+}
+
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -102,4 +165,17 @@
   .features {
     margin: 2rem auto;
   }
+
+  .admin-title {
+    font-size: 2rem;
+  }
+
+  .admin-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-card {
+    padding: 1.5rem;
+  }
+}
 }
